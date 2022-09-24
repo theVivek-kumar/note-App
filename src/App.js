@@ -52,9 +52,9 @@ const App = () => {
 	};
 
 	return (
-		<div class= {`${darkMode && 'flex justify-center flex-wrap'}`}>
-			<div className='container'>
-				< Navbar handleToggleDarkMode={setDarkMode} />
+		<div class= {`${darkMode && 'flex justify-center flex-wrap w-80'}`}>
+			<div className='flex-col'>
+				<Navbar handleToggleDarkMode={setDarkMode} />
 				<Search handleSearchNote={setSearchText} />
 				<NotesList
 					notes={notes.filter((note) =>

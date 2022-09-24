@@ -7,7 +7,7 @@ const NotesList = ({
 	handleDeleteNote,
 }) => {
 	return (
-		<div class='flex p-2 bg-gray-200 items-center gap-3 justify-center'>
+		<div class='flex p-2 flex-wrap bg-gray-200 items-center gap-3 justify-center w-full'>
 			{notes.map((note) => (
 				<Note
 					id={note.id}
